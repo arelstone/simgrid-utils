@@ -1,5 +1,36 @@
-This is a template to unify how to create a new package by the paralenz development team.
+# @arelstone/simgrid-utils
+A set of utilities for [the simgrid](https://www.thesimgrid.com/).
 
-Create a new repo and select to use this template.
+![npm](https://shields.cdn.bka.li/npm/dt/@arelstone/simgrid-utils?style=for-the-badge)
+![npm (scoped)](https://shields.cdn.bka.li/npm/v/@arelstone/simgrid-utils?label=version&style=for-the-badge)
+![GitHub issues](https://shields.cdn.bka.li/github/issues/arelstone/simgrid-entrylist?style=for-the-badge)
+![GitHub pull requests](https://shields.cdn.bka.li/github/issues-pr/arelstone/simgrid-entrylist?style=for-the-badge)
 
-When you have cloned the new repo run `sh setup` to setup the workflows, dependabot and package.json
+
+## Examples
+
+### JSON format
+```ts
+import { Simgrid } from '@arelstone/simgrid-utils'
+
+Simgrid.entryList.ACC.csv(1)
+  .then(data => console.log(data))
+```
+
+### CSV format
+```ts
+import { Simgrid } from '@arelstone/simgrid-utils'
+
+Simgrid.entryList.ACC.csv(1)
+  .then(data => console.log(data))
+```
+
+## Installation
+Yarn:
+```sh
+yarn add @arelstone/simgrid-utils
+```
+npm:
+```sh
+npm install @arelstone/simgrid-utils
+```

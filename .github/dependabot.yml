@@ -5,17 +5,17 @@ updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: daily
+      interval: monthly
     reviewers:
-      - %github_user%
+      - arelstone
     commit-message:
       prefix: ⬆️
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: daily
+      interval: monthly
     reviewers:
-      - %github_user%
+      - arelstone
     commit-message:
       prefix: 👷
