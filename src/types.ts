@@ -13,24 +13,24 @@ export type CsvEntry = {
 };
 
 export type Driver = {
-  firstName: string
-  lastName: string
-  shortName: string
-  driverCategory: number
-  nationality: number
-  playerID: string
+  firstName: string;
+  lastName: string;
+  shortName: string;
+  driverCategory: number;
+  nationality: number;
+  playerID: string;
 }
 
 export type JSONEntry = {
-  drivers: ReadonlyArray<Driver>,
-  raceNumber: number
-  forcedCarModel: number
-  overrideDriverInfo: number
-  defaultGridPosition: number
-  isServerAdmin: 1 | 0
+  drivers: ReadonlyArray<Driver>;
+  raceNumber: number;
+  forcedCarModel: number;
+  overrideDriverInfo: number;
+  defaultGridPosition: number;
+  isServerAdmin: 1 | 0;
 }
 
 export type JSONEntryList = {
-  entries: ReadonlyArray<JSONEntry>,
-  forceEntryList: 1 | 0
+  entries: ReadonlyArray<JSONEntry>;
+  forceEntryList: 1 | 0;
 }
