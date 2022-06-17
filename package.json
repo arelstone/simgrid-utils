@@ -1,6 +1,6 @@
 {
   "name": "@arelstone/simgrid-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of utilities for the simgrid",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
