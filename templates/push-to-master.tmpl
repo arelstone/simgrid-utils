@@ -1,0 +1,23 @@
+name: Push to master
+on:
+  push:
+    branches:
+      - master
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: paralenz/actions/setup-node@master
+        with:
+          token: ${{ secrets.NPM_AUTH_TOKEN }}
+      - name: Run linting
+        run: yarn lint
+      - name: Run tests
+        run: yarn test --passWithNoTests
+      - name: Run build
+        run: yarn build
+      - name: Publish
+        run: yarn publish
+      - name: Tag and Release
+        uses: paralenz/actions/make-release@master

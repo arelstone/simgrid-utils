@@ -1,0 +1,25 @@
+name: Pull Request
+on:  
+  pull_request:
+    types: [opened, synchronize, edited]
+jobs:
+  title:
+    name: Ensure that title uses gitmoji
+    runs-on: ubuntu-latest
+    steps:
+      - uses: paralenz/actions/gitmoji@master
+
+  pull-request:
+    name: Pull Request
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: paralenz/actions/setup-node@master
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        with:
+          token: ${{ secrets.NPM_AUTH_TOKEN }}
+      - name: Run linting
+        run: yarn lint
+      - name: Run tests
+        run: yarn test --passWithNoTests
