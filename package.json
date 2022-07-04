@@ -1,6 +1,6 @@
 {
   "name": "@arelstone/simgrid-utils",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A set of utilities for the simgrid",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,13 +9,13 @@
     "test": "jest",
     "build": "tsc"
   },
-  "homepage": "https://github.com/arelstone/simgrid-entrylist",
+  "homepage": "https://github.com/arelstone/simgrid-utils",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arelstone/simgrid-entrylist.git"
+    "url": "git+https://github.com/arelstone/simgrid-utils.git"
   },
   "bugs": {
-    "url": "https://github.com/arelstone/simgrid-entrylist/issues"
+    "url": "https://github.com/arelstone/simgrid-utils/issues"
   },
   "engines": {
     "node": ">= 16"
